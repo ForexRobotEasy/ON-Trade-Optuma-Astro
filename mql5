@@ -1,0 +1,136 @@
+mql5
+//+------------------------------------------------------------------+
+//|                                              ON Trade Optuma Astro |
+//|                                         forexroboteasy.com        |
+//|                                         Forex Robot Easy Team     |
+//+------------------------------------------------------------------+
+
+// Define input parameters
+input bool enablePlanetaryLines = true; // Enable planetary lines on the chart
+input bool enableRelationshipInfo = true; // Enable information on the relationship between planets
+input bool enablePlanetaryAspects = true; // Enable calculation and display of planetary aspects
+
+// Define global variables
+int chartID; // ID of the current chart
+bool isInitialized = false; // Flag indicating whether the indicator is initialized
+
+//+------------------------------------------------------------------+
+//| Custom indicator initialization function                         |
+//+------------------------------------------------------------------+
+int OnInit()
+{
+    // Check if the indicator is already initialized
+    if (isInitialized)
+        return(INIT_SUCCEEDED); // Indicator is already initialized, return success
+
+    // Get the ID of the current chart
+    chartID = ChartID();
+
+    // Perform necessary initialization tasks
+    // ...
+
+    isInitialized = true; // Set indicator initialization flag
+
+    return(INIT_SUCCEEDED); // Return initialization success
+}
+
+//+------------------------------------------------------------------+
+//| Custom indicator iteration function                              |
+//+------------------------------------------------------------------+
+int OnCalculate(const int rates_total,
+                const int prev_calculated,
+                const datetime &time[],
+                const double &open[],
+                const double &high[],
+                const double &low[],
+                const double &close[],
+                const long &tick_volume[],
+                const long &volume[],
+                const int &spread[])
+{
+    // Perform necessary calculations and update the chart panel
+    // ...
+
+    return(rates_total); // Return the total number of calculated bars
+}
+
+//+------------------------------------------------------------------+
+//| Custom function to display planetary lines on the chart           |
+//+------------------------------------------------------------------+
+void displayPlanetaryLines()
+{
+    // Implement code to display planetary lines on the chart
+    // ...
+}
+
+//+------------------------------------------------------------------+
+//| Custom function to provide information on planetary relationships |
+//+------------------------------------------------------------------+
+void provideRelationshipInfo()
+{
+    // Implement code to provide information on the relationship between planets
+    // ...
+}
+
+//+------------------------------------------------------------------+
+//| Custom function to calculate and display planetary aspects        |
+//+------------------------------------------------------------------+
+void calculatePlanetaryAspects()
+{
+    // Implement code to calculate and display planetary aspects
+    // ...
+}
+
+//+------------------------------------------------------------------+
+//| Custom function to test the accuracy and reliability of the code  |
+//+------------------------------------------------------------------+
+void testCode()
+{
+    // Implement code to thoroughly test the accuracy and reliability of the indicator's functionalities
+    // ...
+}
+
+//+------------------------------------------------------------------+
+//| Custom function to document the code for future reference         |
+//+------------------------------------------------------------------+
+void documentCode()
+{
+    // Implement code to document the indicator code for future reference and maintenance purposes
+    // ...
+}
+
+//+------------------------------------------------------------------+
+//| Custom function to deliver the code within the specified timeframe|
+//+------------------------------------------------------------------+
+void deliverCode()
+{
+    // Implement code to deliver the code within the specified timeframe, meeting all the requirements
+    // ...
+}
+
+//+------------------------------------------------------------------+
+//| Custom indicator deinitialization function                       |
+//+------------------------------------------------------------------+
+void OnDeinit(const int reason)
+{
+    // Perform necessary cleanup tasks
+    // ...
+}
+
+//+------------------------------------------------------------------+
+//| Custom function to execute the trading robot based on the indicator|
+//+------------------------------------------------------------------+
+void executeTradingRobot()
+{
+    // Implement code to execute the trading robot based on the Optuma Astro indicator
+    // ...
+}
+
+//+------------------------------------------------------------------+
+//| Custom function to control the trading environment                |
+//+------------------------------------------------------------------+
+void controlTradingEnvironment()
+{
+    // Implement code to control the trading environment and ensure seamless integration with MT4 platform
+    // ...
+}
